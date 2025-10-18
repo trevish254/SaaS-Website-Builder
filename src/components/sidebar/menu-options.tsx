@@ -5,7 +5,7 @@ import {
   AgencySidebarOption,
   SubAccount,
   SubAccountSidebarOption,
-} from '@prisma/client'
+} from '@/lib/prisma-compat'
 import React, { useEffect, useMemo, useState } from 'react'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '../ui/sheet'
 import { Button } from '../ui/button'

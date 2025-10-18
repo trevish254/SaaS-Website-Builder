@@ -23,7 +23,7 @@ import { Input } from '../ui/input'
 import { Button } from '../ui/button'
 import Loading from '../global/loading'
 import { useToast } from '../ui/use-toast'
-import { FunnelPage } from '@prisma/client'
+import { FunnelPage } from '@/lib/prisma-compat'
 import { FunnelPageSchema } from '@/lib/types'
 import {
   deleteFunnelePage,

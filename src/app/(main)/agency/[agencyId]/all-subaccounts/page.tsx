@@ -19,7 +19,7 @@ import {
   CommandList,
 } from '@/components/ui/command'
 import { getAuthUserDetails } from '@/lib/queries'
-import { SubAccount } from '@prisma/client'
+import { SubAccount } from '@/lib/prisma-compat'
 import Image from 'next/image'
 import Link from 'next/link'
 

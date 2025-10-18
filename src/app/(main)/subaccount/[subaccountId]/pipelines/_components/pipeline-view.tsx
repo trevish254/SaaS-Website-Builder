@@ -8,7 +8,7 @@ import {
   TicketAndTags,
 } from '@/lib/types'
 import { useModal } from '@/providers/modal-provider'
-import { Lane, Ticket } from '@prisma/client'
+import { Lane, Ticket } from '@/lib/prisma-compat'
 import { Flag, Plus } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import React, { useEffect, useState } from 'react'

@@ -1,9 +1,7 @@
-import { PrismaClient } from '@prisma/client'
+import { createClient } from '@supabase/supabase-js'
+import { Database } from './database.types'
 
-declare global {
-  var prisma: PrismaClient | undefined
-}
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
 
-export const db = globalThis.prisma || new PrismaClient()
-
-if (process.env.NODE_ENV !== 'production') globalThis.prisma = db
+export const db = createClient<Database>(supabaseUrl, supabaseAnonKey)

@@ -26,7 +26,7 @@ import {
 } from '@/components/ui/card'
 
 import FileUpload from '../global/file-upload'
-import { Agency, SubAccount } from '@prisma/client'
+import { Agency, SubAccount } from '@/lib/prisma-compat'
 import { useToast } from '../ui/use-toast'
 import { saveActivityLogsNotification, upsertSubAccount } from '@/lib/queries'
 import { useEffect } from 'react'

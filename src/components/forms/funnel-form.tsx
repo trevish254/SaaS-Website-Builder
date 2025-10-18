@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/form'
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card'
 import { useForm } from 'react-hook-form'
-import { Funnel } from '@prisma/client'
+import { Funnel } from '@/lib/prisma-compat'
 import { Input } from '../ui/input'
 import { Textarea } from '../ui/textarea'
 

@@ -1,0 +1,92 @@
+// Prisma compatibility types for Supabase migration
+// This file provides type aliases to match Prisma naming conventions
+
+import { Database } from './database.types'
+
+// Table row types (matching Prisma model names)
+export type User = Database['public']['Tables']['users']['Row']
+export type Agency = Database['public']['Tables']['agencies']['Row']
+export type SubAccount = Database['public']['Tables']['sub_accounts']['Row']
+export type Permission = Database['public']['Tables']['permissions']['Row']
+export type Invitation = Database['public']['Tables']['invitations']['Row']
+export type AgencySidebarOption = Database['public']['Tables']['agency_sidebar_options']['Row']
+export type SubAccountSidebarOption = Database['public']['Tables']['sub_account_sidebar_options']['Row']
+export type Tag = Database['public']['Tables']['tags']['Row']
+export type Pipeline = Database['public']['Tables']['pipelines']['Row']
+export type Lane = Database['public']['Tables']['lanes']['Row']
+export type Contact = Database['public']['Tables']['contacts']['Row']
+export type Ticket = Database['public']['Tables']['tickets']['Row']
+export type Trigger = Database['public']['Tables']['triggers']['Row']
+export type Automation = Database['public']['Tables']['automations']['Row']
+export type AutomationInstance = Database['public']['Tables']['automation_instances']['Row']
+export type Action = Database['public']['Tables']['actions']['Row']
+export type Media = Database['public']['Tables']['media']['Row']
+export type Funnel = Database['public']['Tables']['funnels']['Row']
+export type ClassName = Database['public']['Tables']['class_names']['Row']
+export type FunnelPage = Database['public']['Tables']['funnel_pages']['Row']
+export type Notification = Database['public']['Tables']['notifications']['Row']
+export type Subscription = Database['public']['Tables']['subscriptions']['Row']
+export type AddOn = Database['public']['Tables']['add_ons']['Row']
+
+// Enum types
+export type Role = Database['public']['Enums']['role_enum']
+export type Icon = Database['public']['Tables']['sub_account_sidebar_options']['Row']['icon']
+export type TriggerTypes = Database['public']['Enums']['trigger_types_enum']
+export type ActionType = Database['public']['Enums']['action_type_enum']
+export type InvitationStatus = Database['public']['Enums']['invitation_status_enum']
+export type Plan = Database['public']['Enums']['plan_enum']
+
+// Insert types
+export type UserInsert = Database['public']['Tables']['users']['Insert']
+export type AgencyInsert = Database['public']['Tables']['agencies']['Insert']
+export type SubAccountInsert = Database['public']['Tables']['sub_accounts']['Insert']
+export type PermissionInsert = Database['public']['Tables']['permissions']['Insert']
+export type InvitationInsert = Database['public']['Tables']['invitations']['Insert']
+export type AgencySidebarOptionInsert = Database['public']['Tables']['agency_sidebar_options']['Insert']
+export type SubAccountSidebarOptionInsert = Database['public']['Tables']['sub_account_sidebar_options']['Insert']
+export type TagInsert = Database['public']['Tables']['tags']['Insert']
+export type PipelineInsert = Database['public']['Tables']['pipelines']['Insert']
+export type LaneInsert = Database['public']['Tables']['lanes']['Insert']
+export type ContactInsert = Database['public']['Tables']['contacts']['Insert']
+export type TicketInsert = Database['public']['Tables']['tickets']['Insert']
+export type TriggerInsert = Database['public']['Tables']['triggers']['Insert']
+export type AutomationInsert = Database['public']['Tables']['automations']['Insert']
+export type AutomationInstanceInsert = Database['public']['Tables']['automation_instances']['Insert']
+export type ActionInsert = Database['public']['Tables']['actions']['Insert']
+export type MediaInsert = Database['public']['Tables']['media']['Insert']
+export type FunnelInsert = Database['public']['Tables']['funnels']['Insert']
+export type ClassNameInsert = Database['public']['Tables']['class_names']['Insert']
+export type FunnelPageInsert = Database['public']['Tables']['funnel_pages']['Insert']
+export type NotificationInsert = Database['public']['Tables']['notifications']['Insert']
+export type SubscriptionInsert = Database['public']['Tables']['subscriptions']['Insert']
+export type AddOnInsert = Database['public']['Tables']['add_ons']['Insert']
+
+// Update types
+export type UserUpdate = Database['public']['Tables']['users']['Update']
+export type AgencyUpdate = Database['public']['Tables']['agencies']['Update']
+export type SubAccountUpdate = Database['public']['Tables']['sub_accounts']['Update']
+export type PermissionUpdate = Database['public']['Tables']['permissions']['Update']
+export type InvitationUpdate = Database['public']['Tables']['invitations']['Update']
+export type AgencySidebarOptionUpdate = Database['public']['Tables']['agency_sidebar_options']['Update']
+export type SubAccountSidebarOptionUpdate = Database['public']['Tables']['sub_account_sidebar_options']['Update']
+export type TagUpdate = Database['public']['Tables']['tags']['Update']
+export type PipelineUpdate = Database['public']['Tables']['pipelines']['Update']
+export type LaneUpdate = Database['public']['Tables']['lanes']['Update']
+export type ContactUpdate = Database['public']['Tables']['contacts']['Update']
+export type TicketUpdate = Database['public']['Tables']['tickets']['Update']
+export type TriggerUpdate = Database['public']['Tables']['triggers']['Update']
+export type AutomationUpdate = Database['public']['Tables']['automations']['Update']
+export type AutomationInstanceUpdate = Database['public']['Tables']['automation_instances']['Update']
+export type ActionUpdate = Database['public']['Tables']['actions']['Update']
+export type MediaUpdate = Database['public']['Tables']['media']['Update']
+export type FunnelUpdate = Database['public']['Tables']['funnels']['Update']
+export type ClassNameUpdate = Database['public']['Tables']['class_names']['Update']
+export type FunnelPageUpdate = Database['public']['Tables']['funnel_pages']['Update']
+export type NotificationUpdate = Database['public']['Tables']['notifications']['Update']
+export type SubscriptionUpdate = Database['public']['Tables']['subscriptions']['Update']
+export type AddOnUpdate = Database['public']['Tables']['add_ons']['Update']
+
+// Compatibility namespace to match @prisma/client pattern
+export namespace Prisma {
+  // Empty namespace for compatibility - Prisma-specific types not needed with Supabase
+}

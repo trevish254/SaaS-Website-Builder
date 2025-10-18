@@ -1,5 +1,5 @@
 'use client'
-import { Media } from '@prisma/client'
+import { Media } from '@/lib/prisma-compat'
 import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 import {

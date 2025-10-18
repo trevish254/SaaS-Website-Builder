@@ -10,7 +10,7 @@ import {
   TableRow,
 } from '@/components/ui/table'
 import { db } from '@/lib/db'
-import { Contact, SubAccount, Ticket } from '@prisma/client'
+import { Contact, SubAccount, Ticket } from '@/lib/prisma-compat'
 import { format } from 'date-fns'
 import React from 'react'
 import CraeteContactButton from './_components/create-contact-btn'

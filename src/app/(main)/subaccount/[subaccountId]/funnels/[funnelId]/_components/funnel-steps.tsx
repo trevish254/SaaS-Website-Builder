@@ -8,7 +8,7 @@ import { toast } from '@/components/ui/use-toast'
 import { upsertFunnelPage } from '@/lib/queries'
 import { FunnelsForSubAccount } from '@/lib/types'
 import { useModal } from '@/providers/modal-provider'
-import { FunnelPage } from '@prisma/client'
+import { FunnelPage } from '@/lib/prisma-compat'
 import { Check, ExternalLink, LucideEdit } from 'lucide-react'
 import React, { useState } from 'react'
 

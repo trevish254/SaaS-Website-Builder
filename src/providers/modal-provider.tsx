@@ -1,6 +1,6 @@
 'use client'
 import { PricesList, TicketDetails } from '@/lib/types'
-import { Agency, Contact, Plan, User } from '@prisma/client'
+import { Agency, Contact, Plan, User } from '@/lib/prisma-compat'
 import { createContext, useContext, useEffect, useState } from 'react'
 
 interface ModalProviderProps {

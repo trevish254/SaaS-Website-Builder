@@ -1,5 +1,5 @@
 'use client'
-import { Agency } from '@prisma/client'
+import { Agency } from '@/lib/prisma-compat'
 import { useForm } from 'react-hook-form'
 import React, { useEffect, useState } from 'react'
 import { NumberInput } from '@tremor/react'

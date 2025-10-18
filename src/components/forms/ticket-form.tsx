@@ -8,7 +8,7 @@ import {
 import { TicketFormSchema, TicketWithTags } from '@/lib/types'
 import { useModal } from '@/providers/modal-provider'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { Contact, Tag, User } from '@prisma/client'
+import { Contact, Tag, User } from '@/lib/prisma-compat'
 import { useRouter } from 'next/navigation'
 import React, { useEffect, useRef, useState } from 'react'
 import { useForm } from 'react-hook-form'

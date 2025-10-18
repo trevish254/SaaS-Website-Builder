@@ -11,7 +11,7 @@ import {
 } from '@/components/ui/tooltip'
 import { saveActivityLogsNotification, upsertFunnelPage } from '@/lib/queries'
 import { DeviceTypes, useEditor } from '@/providers/editor/editor-provider'
-import { FunnelPage } from '@prisma/client'
+import { FunnelPage } from '@/lib/prisma-compat'
 import clsx from 'clsx'
 import {
   ArrowLeftCircle,

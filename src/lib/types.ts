@@ -7,7 +7,7 @@ import {
   Tag,
   Ticket,
   User,
-} from '@prisma/client'
+} from '@/lib/prisma-compat'
 import {
   _getTicketsWithAllRelations,
   getAuthUserDetails,

@@ -2,7 +2,7 @@
 import { EditorBtns } from '@/lib/constants'
 import { EditorAction } from './editor-actions'
 import { Dispatch, createContext, useContext, useReducer } from 'react'
-import { FunnelPage } from '@prisma/client'
+import { FunnelPage } from '@/lib/prisma-compat'
 
 export type DeviceTypes = 'Desktop' | 'Mobile' | 'Tablet'
 

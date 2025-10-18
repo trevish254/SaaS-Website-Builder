@@ -12,7 +12,7 @@ import {
   SheetTrigger,
 } from '../ui/sheet'
 import { Bell } from 'lucide-react'
-import { Role } from '@prisma/client'
+import { Role } from '@/lib/prisma-compat'
 import { Card } from '../ui/card'
 import { Switch } from '../ui/switch'
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar'

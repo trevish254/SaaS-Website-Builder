@@ -4,7 +4,7 @@ import {
   UserWithPermissionsAndSubAccounts,
 } from '@/lib/types'
 import { useModal } from '@/providers/modal-provider'
-import { SubAccount, User } from '@prisma/client'
+import { SubAccount, User } from '@/lib/prisma-compat'
 import React, { useEffect, useState } from 'react'
 import { useToast } from '../ui/use-toast'
 import { useRouter } from 'next/navigation'

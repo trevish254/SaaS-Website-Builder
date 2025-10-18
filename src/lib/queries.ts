@@ -13,7 +13,7 @@ import {
   Tag,
   Ticket,
   User,
-} from '@prisma/client'
+} from '@/lib/prisma-compat'
 import { v4 } from 'uuid'
 import {
   CreateFunnelFormSchema,

@@ -14,7 +14,7 @@ import {
   saveActivityLogsNotification,
   updateFunnelProducts,
 } from '@/lib/queries'
-import { Funnel } from '@prisma/client'
+import { Funnel } from '@/lib/prisma-compat'
 import { useRouter } from 'next/navigation'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'

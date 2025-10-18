@@ -7,7 +7,7 @@ import {
   verifyAndAcceptInvitation,
 } from '@/lib/queries'
 import { currentUser } from '@clerk/nextjs'
-import { Role } from '@prisma/client'
+import { Role } from '@/lib/prisma-compat'
 import { redirect } from 'next/navigation'
 import React from 'react'
 
